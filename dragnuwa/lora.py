@@ -221,7 +221,7 @@ def _find_modules(
     Find all modules of a certain class (or union of classes) that are direct or
     indirect descendants of other modules of a certain class (or union of classes).
 
-    Returns all matching modules, along with the parent of those moduless and the
+    Returns all matching modules, along with the parent of those modules and the
     names they are referenced by.
     """
 
