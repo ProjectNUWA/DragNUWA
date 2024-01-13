@@ -195,7 +195,7 @@ class Drag:
                 ouput_tensor.append(ouput_video_list[j+1][i][1:])
             ouput_tensor = torch.cat(ouput_tensor, dim=0)
             outputs_path = os.path.join(output_dir, f'output_{i}_{id}.gif')
-            data2file([transforms.ToPILImage('RGB')(utils.make_grid(e.to(torch.float32).cpu(), normalize=True, range=(-1, 1))) for e in ouput_tensor], outputs_path,
+            data2file([transforms.ToPILImage('RGB')(utils.make_grid(e.to(torch.float32).cpu(), normalize=True, value_range=(-1, 1))) for e in ouput_tensor], outputs_path,
                       printable=False, duration=1 / 6, override=True)
 
         return visualized_drag[0], outputs_path
