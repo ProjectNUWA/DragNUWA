@@ -1,3 +1,3 @@
 # DragNUWA
 
-DragNUWA is under CELA review, and it is temporarily taken down.
+DragNUWA is being transferred to the Microsoft Branch. It will be available once applicable reviews are completed.
